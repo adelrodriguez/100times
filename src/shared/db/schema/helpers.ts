@@ -1,13 +1,13 @@
 import { integer, sqliteTableCreator, text } from "drizzle-orm/sqlite-core"
+import { z } from "zod/v4"
 import { generatePrefixedId } from "~/shared/utils/id"
-import * as z from "~/shared/utils/schema"
 
 export const createTable = sqliteTableCreator(name => name)
 
 export const UNIQUE_ID_LENGTH = 24
 
 export function constructId<B extends string>(_brand: B, prefix: string) {
-  const IdSchema = z.brand(_brand)
+  const IdSchema = z.string().brand(_brand)
 
   return {
     id: text()

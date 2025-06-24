@@ -19,4 +19,6 @@ export function connect() {
 
 const database = remember("database", connect)
 
+export { schema }
+
 export default database
