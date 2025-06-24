@@ -1,0 +1,75 @@
+import type { ComponentProps } from "react"
+import { cn } from "~/shared/utils"
+
+function TypographyH1({ className, ...props }: ComponentProps<"h1">) {
+  return <h1 className={cn("scroll-m-20 font-extrabold text-4xl tracking-tight lg:text-5xl", className)} {...props} />
+}
+
+function TypographyH2({ className, ...props }: ComponentProps<"h2">) {
+  return (
+    <h2
+      className={cn("scroll-m-20 border-b pb-2 font-semibold text-3xl tracking-tight first:mt-0", className)}
+      {...props}
+    />
+  )
+}
+
+function TypographyH3({ className, ...props }: ComponentProps<"h3">) {
+  return <h3 className={cn("scroll-m-20 font-semibold text-2xl tracking-tight", className)} {...props} />
+}
+
+function TypographyH4({ className, ...props }: ComponentProps<"h4">) {
+  return <h4 className={cn("scroll-m-20 font-semibold text-xl tracking-tight", className)} {...props} />
+}
+
+function TypographyP({ className, ...props }: ComponentProps<"p">) {
+  return <p className={cn("not-first:mt-6 leading-7", className)} {...props} />
+}
+
+function TypographyBlockquote({ className, ...props }: ComponentProps<"blockquote">) {
+  return <blockquote className={cn("mt-6 border-l-2 pl-6 italic", className)} {...props} />
+}
+
+function TypographyList({ className, ...props }: ComponentProps<"ul">) {
+  return <ul className={cn("my-6 ml-6 list-disc [&>li]:mt-2", className)} {...props} />
+}
+
+function TypographyInlineCode({ className, ...props }: ComponentProps<"code">) {
+  return (
+    <code
+      className={cn("relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono font-semibold text-sm", className)}
+      {...props}
+    />
+  )
+}
+
+function TypographyLead({ className, ...props }: ComponentProps<"p">) {
+  return <p className={cn("text-muted-foreground text-xl", className)} {...props} />
+}
+
+function TypographyLarge({ className, ...props }: ComponentProps<"div">) {
+  return <div className={cn("font-semibold text-lg", className)} {...props} />
+}
+
+function TypographySmall({ className, ...props }: ComponentProps<"small">) {
+  return <small className={cn("font-medium text-sm leading-none", className)} {...props} />
+}
+
+function TypographyMuted({ className, ...props }: ComponentProps<"p">) {
+  return <p className={cn("text-muted-foreground text-sm", className)} {...props} />
+}
+
+export {
+  TypographyH1,
+  TypographyH2,
+  TypographyH3,
+  TypographyH4,
+  TypographyP,
+  TypographyBlockquote,
+  TypographyList,
+  TypographyInlineCode,
+  TypographyLead,
+  TypographyLarge,
+  TypographySmall,
+  TypographyMuted,
+}
