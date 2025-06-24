@@ -1,5 +1,5 @@
 import type { ComponentProps } from "react"
-import { cn } from "~/shared/utils"
+import { cn } from "~/shared/utils/cn"
 
 function TypographyH1({ className, ...props }: ComponentProps<"h1">) {
   return <h1 className={cn("scroll-m-20 font-extrabold text-4xl tracking-tight lg:text-5xl", className)} {...props} />

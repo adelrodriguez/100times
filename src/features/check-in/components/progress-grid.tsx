@@ -1,6 +1,6 @@
 "use client"
 
-import { cn } from "~/shared/utils"
+import { cn } from "~/shared/utils/cn"
 
 export default function ProgressGrid({
   progress,
