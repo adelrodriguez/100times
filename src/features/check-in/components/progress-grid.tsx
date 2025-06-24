@@ -38,7 +38,6 @@ function GridCell({
   isNext: boolean
   onPress?: () => void
 }) {
-  console.log(isNext)
   return (
     <button
       className={cn(
