@@ -1,14 +1,16 @@
-import ProgressGrid from "~/features/check-in/components/progress-grid"
+import CreateNewTaskSheet from "~/features/tasks/components/create-new-task-sheet"
 import { TypographyH1 } from "~/shared/components/ui/typography"
 
-const progress = Math.floor(Math.random() * 101)
-
-export default function Page() {
+export default async function Page() {
   return (
     <div className="flex flex-col items-center justify-center">
       <TypographyH1>100times</TypographyH1>
-      <div className="flex flex-col items-center justify-center w-full p-4">
-        <ProgressGrid progress={progress} highlightNext />
+
+      <div className="flex-1">
+        <div className="text-center text-muted-foreground">No tasks yet</div>
+      </div>
+      <div className="absolute bottom-12 right-0 flex justify-center w-full">
+        <CreateNewTaskSheet />
       </div>
     </div>
   )
