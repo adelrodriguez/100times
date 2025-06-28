@@ -1,8 +1,7 @@
 import type { NextConfig } from "next"
 
 // Verify environment variables are set during build time
-import "~/shared/env/server"
-import "~/shared/env/client"
+import "~/shared/env"
 
 const nextConfig = {
   /* config options here */

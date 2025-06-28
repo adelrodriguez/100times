@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
-import CurrentUser from "~/features/auth/components/current-user"
+import Providers from "~/shared/components/providers"
 
 import "~/shared/styles/globals.css"
 import { cn } from "~/shared/utils/cn"
@@ -28,12 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn("antialiased", geistSans.variable, geistMono.variable)}>
-        <div className="flex flex-col min-h-screen max-w-4xl mx-auto p-4">
-          <header className="flex items-center justify-end">
-            <CurrentUser />
-          </header>
-          <main className="flex-1">{children}</main>
-        </div>
+        <Providers>
+          <div className="flex flex-col min-h-screen max-w-4xl mx-auto p-4">
+            <main className="flex-1">{children}</main>
+          </div>
+        </Providers>
       </body>
     </html>
   )
