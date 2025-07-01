@@ -1,0 +1,19 @@
+{
+  "app": {
+    "dashboard": {
+      "home": {
+        "welcome": "Welcome back, {name}!"
+      }
+    }
+  },
+  "web": {
+    "home": {
+      "title": "Home",
+      "description": "This is the home page of the project",
+      "locale": {
+        "en": "English",
+        "es": "Spanish"
+      }
+    }
+  }
+}

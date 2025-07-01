@@ -1,0 +1,55 @@
+{
+  "name": "@init/analytics",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./product/client": "./src/product/client.tsx",
+    "./product/expo": "./src/product/expo.ts",
+    "./product/nextjs": "./src/product/nextjs.ts",
+    "./product/server": "./src/product/server.ts",
+    "./web": "./src/web.ts"
+  },
+  "scripts": {
+    "check": "biome check --write",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "deps:check": "taze -l",
+    "deps:update": "taze -lw",
+    "format": "biome format --write",
+    "lint": "biome lint --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@init/utils": "workspace:*",
+    "next-plausible": "3.12.4",
+    "posthog-js": "1.255.1",
+    "posthog-node": "5.1.1",
+    "posthog-react-native": "4.1.3",
+    "server-only": "0.0.1"
+  },
+  "devDependencies": {
+    "@tooling/tsconfig": "workspace:*",
+    "typescript": "5.8.3"
+  },
+  "peerDependencies": {
+    "next": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-native": "*"
+  },
+  "peerDependenciesMeta": {
+    "next": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    },
+    "react-native": {
+      "optional": true
+    }
+  }
+}

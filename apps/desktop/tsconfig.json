@@ -1,0 +1,18 @@
+{
+  "extends": "@tooling/tsconfig/web.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"],
+      "~~/*": ["./*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": [
+    "reset.d.ts",
+    "src",
+    ".next/types/**/*.ts",
+    "next-env.d.ts",
+    "ext.config.ts"
+  ]
+}

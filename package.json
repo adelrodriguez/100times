@@ -1,0 +1,69 @@
+{
+  "name": "init",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "tooling/*"
+  ],
+  "scripts": {
+    "boundaries": "turbo boundaries",
+    "build": "turbo build",
+    "check": "turbo check",
+    "clean": "turbo clean && git clean -xdf .cache .turbo dist node_modules",
+    "db:migrate": "turbo --filter @init/db migrate",
+    "db:push": "turbo --filter @init/db push",
+    "db:studio": "turbo --filter @init/db studio",
+    "deps:check": "taze -rl",
+    "deps:list": "syncpack list",
+    "deps:mismatch": "syncpack list-mismatches --types dev,prod",
+    "deps:sync": "syncpack fix-mismatches --types dev,prod",
+    "deps:sync:prompt": "syncpack prompt --types dev,prod",
+    "deps:update": "taze -rlw",
+    "dev": "turbo dev",
+    "docker:down": "docker compose -f infra/local/docker-compose.yml down",
+    "docker:up": "docker compose -f infra/local/docker-compose.yml up -d",
+    "format": "turbo format",
+    "generate": "turbo generate",
+    "lint": "turbo lint",
+    "lint:repo": "sherif --fix",
+    "start": "turbo run start",
+    "test": "turbo test",
+    "typecheck": "turbo typecheck --continue",
+    "workspace:add": "bun run scripts/add.ts",
+    "workspace:graph": "bun run scripts/graph.ts",
+    "workspace:remove": "bun run scripts/remove.ts",
+    "workspace:replace": "bun run scripts/replace.ts",
+    "workspace:setup": "bun run scripts/setup.ts",
+    "workspace:update": "bun run scripts/update.ts"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.0.6",
+    "@turbo/gen": "2.5.4",
+    "@types/bun": "1.2.17",
+    "dependency-cruiser": "16.10.3",
+    "shadcn": "2.7.0",
+    "sherif": "1.6.1",
+    "syncpack": "13.0.4",
+    "taze": "19.1.0",
+    "turbo": "2.5.4",
+    "typescript": "5.8.3"
+  },
+  "packageManager": "bun@1.2.17",
+  "engines": {
+    "node": ">=24"
+  },
+  "trustedDependencies": [
+    "@parcel/watcher",
+    "@sentry/cli",
+    "@tailwindcss/oxide",
+    "@upstash/qstash-cli",
+    "core-js",
+    "core-js-pure",
+    "docs",
+    "es5-ext",
+    "extension",
+    "protobufjs",
+    "spawn-sync"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "extends": ["expo/tsconfig.base", "@tooling/tsconfig/mobile.json"],
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "paths": {
+      "~/*": ["./src/*"]
+    }
+  },
+  "include": [
+    ".expo/types/**/*.ts",
+    "src",
+    "app.config.ts",
+    "eslint.config.mjs",
+    "expo-env.d.ts",
+    "nativewind-env.d.ts",
+    "reset.d.ts"
+  ]
+}

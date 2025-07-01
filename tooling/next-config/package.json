@@ -1,0 +1,23 @@
+{
+  "name": "@tooling/next-config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "scripts": {
+    "check": "biome check --write",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "deps:check": "taze -l",
+    "deps:update": "taze -lw",
+    "format": "biome format --write",
+    "lint": "biome lint --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "15.3.4",
+    "@tooling/tsconfig": "workspace:*",
+    "next": "15.3.4"
+  }
+}

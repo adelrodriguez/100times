@@ -1,0 +1,41 @@
+{
+  "name": "@init/storage",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./expo": "./src/expo.ts",
+    "./nextjs": "./src/nextjs.ts",
+    "./react": "./src/react.ts",
+    "./server": "./src/server.ts",
+    "./ssr": "./src/ssr.ts",
+    "./tailwind": "./src/tailwind.ts"
+  },
+  "scripts": {
+    "check": "biome check --write",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "deps:check": "taze -l",
+    "deps:update": "taze -lw",
+    "format": "biome format --write",
+    "lint": "biome lint --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@uploadthing/expo": "7.2.5",
+    "@uploadthing/react": "7.3.2",
+    "uploadthing": "7.7.3"
+  },
+  "devDependencies": {
+    "@tooling/tsconfig": "workspace:*",
+    "typescript": "5.8.3"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  }
+}

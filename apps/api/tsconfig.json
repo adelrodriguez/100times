@@ -1,0 +1,13 @@
+{
+  "extends": "@tooling/tsconfig/api.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"],
+      "~~/*": ["./*"]
+    },
+    "outDir": "dist",
+    "types": ["bun-types"]
+  },
+  "include": ["src", "reset.d.ts"]
+}

@@ -1,0 +1,11 @@
+{
+  "extends": ["@tooling/tsconfig/vite.json", "./.wxt/tsconfig.json"],
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"],
+      "~~/*": ["./*"]
+    }
+  }
+}

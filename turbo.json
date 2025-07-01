@@ -1,0 +1,72 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalEnv": [
+    "AXIOM_DATASET",
+    "AXIOM_TOKEN",
+
+    "AUTH_SECRET",
+
+    "DATABASE_URL",
+    "DATABASE_AUTH_TOKEN",
+
+    "EMAIL_FROM",
+
+    "GITHUB_CLIENT_ID",
+    "GITHUB_CLIENT_SECRET",
+
+    "GOOGLE_CLIENT_ID",
+    "GOOGLE_CLIENT_SECRET",
+
+    "QSTASH_CURRENT_SIGNING_KEY",
+    "QSTASH_NEXT_SIGNING_KEY",
+    "QSTASH_TOKEN",
+    "QSTASH_URL",
+
+    "RESEND_API_KEY",
+
+    "SENTRY_AUTH_TOKEN",
+    "SENTRY_DSN",
+    "SENTRY_ORG",
+    "SENTRY_PROJECT",
+
+    "UPSTASH_REDIS_REST_TOKEN",
+    "UPSTASH_REDIS_REST_URL"
+  ],
+  "globalPassThroughEnv": ["NODE_ENV", "CI"],
+  "tasks": {
+    "build": {},
+    "check": {
+      "dependsOn": ["^check"]
+    },
+    "clean": {
+      "cache": false,
+      "dependsOn": ["^clean"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "format": {
+      "cache": false
+    },
+    "lint": {},
+    "migrate": {
+      "cache": false
+    },
+    "push": {
+      "cache": false,
+      "interactive": true
+    },
+    "studio": {
+      "cache": false,
+      "persistent": true
+    },
+    "start": {
+      "cache": false,
+      "persistent": true
+    },
+    "test": {},
+    "typecheck": {}
+  },
+  "ui": "tui"
+}

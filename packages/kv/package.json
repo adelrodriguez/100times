@@ -1,0 +1,27 @@
+{
+  "name": "@init/kv",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./client": "./src/client.ts"
+  },
+  "scripts": {
+    "check": "biome check --write",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "deps:check": "taze -l",
+    "deps:update": "taze -lw",
+    "format": "biome format --write",
+    "lint": "biome lint --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@init/utils": "workspace:*",
+    "@upstash/redis": "1.35.0"
+  },
+  "devDependencies": {
+    "@tooling/tsconfig": "workspace:*",
+    "typescript": "5.8.3"
+  }
+}

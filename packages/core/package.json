@@ -1,0 +1,23 @@
+{
+  "name": "@init/core",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "check": "biome check --write",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "deps:check": "taze -l",
+    "deps:update": "taze -lw",
+    "format": "biome format --write",
+    "lint": "biome lint --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@tooling/tsconfig": "workspace:*",
+    "typescript": "5.8.3"
+  }
+}
