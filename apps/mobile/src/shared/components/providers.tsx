@@ -7,9 +7,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context"
 import ThemeProvider from "~/shared/components/theme-provider"
 import env from "~/shared/env"
 
-const convex = new ConvexReactClient(env.EXPO_PUBLIC_CONVEX_URL, {
-  verbose: true,
-})
+const convex = new ConvexReactClient(env.EXPO_PUBLIC_CONVEX_URL)
 
 export default function Providers({ children }: { children: ReactNode }) {
   return (

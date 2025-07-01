@@ -99,7 +99,7 @@ let expoConfig: ExpoConfig = {
     ],
   ],
   scheme: APP_ID,
-  slug: APP_ID,
+  slug: "100times",
   userInterfaceStyle: "automatic",
   version: "1.0.0",
   web: {

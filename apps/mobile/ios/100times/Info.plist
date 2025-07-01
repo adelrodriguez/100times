@@ -34,7 +34,7 @@
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>exp+times100</string>
+          <string>exp+100times</string>
         </array>
       </dict>
     </array>

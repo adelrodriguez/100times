@@ -47,7 +47,6 @@
     "class-variance-authority": "0.7.1",
     "convex": "^1.25.2",
     "expo": "53.0.13",
-    "expo-apple-authentication": "^7.2.4",
     "expo-auth-session": "~6.2.0",
     "expo-blur": "~14.1.4",
     "expo-constants": "~17.1.6",
