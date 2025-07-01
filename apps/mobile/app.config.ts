@@ -76,7 +76,12 @@ let expoConfig: ExpoConfig = {
   plugins: [
     "expo-font",
     "expo-router",
-    "expo-web-browser",
+    [
+      "expo-web-browser",
+      {
+        experimentalLauncherActivity: true,
+      },
+    ],
     [
       "expo-splash-screen",
       {

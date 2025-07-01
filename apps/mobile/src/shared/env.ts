@@ -4,8 +4,9 @@ import * as z from "@100times/utils/schema"
 
 export default createEnv({
   client: {
-    EXPO_PUBLIC_API_URL: z.string(),
+    EXPO_PUBLIC_CONVEX_URL: z.string(),
   },
+
   clientPrefix: "EXPO_PUBLIC_",
   extends: [sentry.expo()],
   runtimeEnv: process.env,

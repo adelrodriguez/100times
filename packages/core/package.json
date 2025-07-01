@@ -5,7 +5,7 @@
   "license": "MIT",
   "type": "module",
   "exports": {
-    ".": "./src/index.ts"
+    "./convex/*": "./convex/_generated/*.js"
   },
   "scripts": {
     "check": "biome check --write",
@@ -19,5 +19,11 @@
   "devDependencies": {
     "@tooling/tsconfig": "workspace:*",
     "typescript": "5.8.3"
+  },
+  "dependencies": {
+    "@auth/core": "0.37.0",
+    "@convex-dev/auth": "^0.0.87",
+    "convex": "^1.25.2",
+    "convex-helpers": "^0.1.95"
   }
 }
