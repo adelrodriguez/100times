@@ -1,4 +1,4 @@
-`# `@init/observability`
+`# `@100times/observability`
 
 Logging, error and uptime monitoring for your application.
 

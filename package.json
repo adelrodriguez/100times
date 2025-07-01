@@ -1,5 +1,5 @@
 {
-  "name": "init",
+  "name": "100times",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -11,9 +11,9 @@
     "build": "turbo build",
     "check": "turbo check",
     "clean": "turbo clean && git clean -xdf .cache .turbo dist node_modules",
-    "db:migrate": "turbo --filter @init/db migrate",
-    "db:push": "turbo --filter @init/db push",
-    "db:studio": "turbo --filter @init/db studio",
+    "db:migrate": "turbo --filter @100times/db migrate",
+    "db:push": "turbo --filter @100times/db push",
+    "db:studio": "turbo --filter @100times/db studio",
     "deps:check": "taze -rl",
     "deps:list": "syncpack list",
     "deps:mismatch": "syncpack list-mismatches --types dev,prod",

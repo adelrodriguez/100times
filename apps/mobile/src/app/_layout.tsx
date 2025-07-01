@@ -6,7 +6,7 @@ import "react-native-reanimated"
 import {
   initializeErrorMonitoring,
   monitoringWrap,
-} from "@init/observability/error/expo"
+} from "@100times/observability/error/expo"
 
 import Providers from "~/shared/components/providers"
 import {

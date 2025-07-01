@@ -1,4 +1,4 @@
-import { cn } from "@init/utils/ui"
+import { cn } from "@100times/utils/ui"
 import { Icon, type IconProps } from "@roninoss/icons"
 import { createFormHook, createFormHookContexts } from "@tanstack/react-form"
 import type { ComponentProps } from "react"

@@ -1,4 +1,4 @@
-import { sentry } from "@init/env/presets"
+import { sentry } from "@100times/env/presets"
 import * as Sentry from "@sentry/nextjs"
 import type { NextConfig } from "next/types"
 import { MONITORING_SAMPLE_RATE } from "../config"

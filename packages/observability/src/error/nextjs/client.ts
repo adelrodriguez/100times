@@ -1,6 +1,6 @@
 "use client"
 
-import { sentry } from "@init/env/presets"
+import { sentry } from "@100times/env/presets"
 import * as Sentry from "@sentry/nextjs"
 import { usePathname } from "next/navigation"
 import { useEffect } from "react"

@@ -1,4 +1,4 @@
-import { captureException } from "@init/observability/error/expo"
+import { captureException } from "@100times/observability/error/expo"
 import { Icon } from "@roninoss/icons"
 import { Link } from "expo-router"
 import { Platform, View } from "react-native"

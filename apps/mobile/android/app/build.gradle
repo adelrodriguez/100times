@@ -89,9 +89,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.init.mobile'
+    namespace 'io.metaideas.times100'
     defaultConfig {
-        applicationId 'com.init.mobile'
+        applicationId 'io.metaideas.times100'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

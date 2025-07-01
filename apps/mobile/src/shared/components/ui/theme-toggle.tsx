@@ -5,7 +5,7 @@ import Animated, {
   ZoomInRotate,
 } from "react-native-reanimated"
 
-import { cn } from "@init/utils/ui"
+import { cn } from "@100times/utils/ui"
 
 import { useColorScheme } from "~/shared/hooks"
 import { COLORS } from "~/shared/theme/colors"

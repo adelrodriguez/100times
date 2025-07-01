@@ -1,6 +1,5 @@
 import fs from "node:fs"
 import { isCancel, log, multiselect, outro, select, text } from "@clack/prompts"
-
 import { runProcess, runScript } from "../tooling/helpers"
 import { Workspaces } from "./utils"
 
@@ -37,7 +36,7 @@ async function getWorkspaceType(): Promise<WorkspaceType> {
 }
 
 async function chooseWorkspaces(type: WorkspaceType): Promise<string[]> {
-  const options = Workspaces[type === "app" ? "APPS" : "PACKAGES"].map(w => ({
+  const options = Workspaces[type === "app" ? "APPS" : "PACKAGES"].map((w) => ({
     value: w.name,
     label: w.description,
   }))

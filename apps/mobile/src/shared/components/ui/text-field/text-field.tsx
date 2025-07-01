@@ -1,4 +1,4 @@
-import { cn } from "@init/utils/ui"
+import { cn } from "@100times/utils/ui"
 import { useAugmentedRef, useControllableState } from "@rn-primitives/hooks"
 import { Icon } from "@roninoss/icons"
 import { cva } from "class-variance-authority"

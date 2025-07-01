@@ -1,4 +1,4 @@
-import { sentry } from "@init/env/presets"
+import { sentry } from "@100times/env/presets"
 import * as Sentry from "@sentry/react-native"
 import { MONITORING_SAMPLE_RATE } from "./config"
 

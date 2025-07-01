@@ -19,7 +19,7 @@ alwaysApply: false
 
 - For packages inside `apps`, use the `~/` alias for imports coming from `[app] /src`.
 - For packages inside `packages`, use relative imports.
-- Use the `@init/` alias for importing packages in the monorepo.
+- Use the `@100times/` alias for importing packages in the monorepo.
 - Never allow imports between `apps`, except from [client.ts](mdc:apps/api/src/client.ts), which should only be used as a development dependency.
 - Avoid circular imports.
 
@@ -44,5 +44,5 @@ alwaysApply: false
 
 ## UI and Styling
 
-- Use components inside `@init/ui` to create components for web projects, and `~/shared/components/ui` for mobile projects.
-- Use the `cn` function inside `@init/utils/ui` for classname composition.
+- Use components inside `@100times/ui` to create components for web projects, and `~/shared/components/ui` for mobile projects.
+- Use the `cn` function inside `@100times/utils/ui` for classname composition.

@@ -9,7 +9,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         type: "input",
         name: "name",
         message: "What is the name of the package?",
-        prefix: "@init/",
+        prefix: "@100times/",
       },
     ],
     actions: [

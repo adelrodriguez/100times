@@ -24,8 +24,8 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:scheme="init"/>
-        <data android:scheme="exp+init"/>
+        <data android:scheme="times100"/>
+        <data android:scheme="exp+times100"/>
       </intent-filter>
     </activity>
   </application>

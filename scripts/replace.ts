@@ -71,7 +71,7 @@ async function main() {
   const projectName = getProjectName()
 
   log.info(
-    `Searching for "@init" in project files (excluding node_modules, .git, etc.) to replace with "@${projectName}"...`
+    `Searching for "@100times" in project files (excluding node_modules, .git, etc.) to replace with "@${projectName}"...`
   )
 
   const rootDir = path.join(__dirname, "..")
@@ -87,12 +87,12 @@ async function main() {
       }
 
       const content = await fs.promises.readFile(file, "utf8")
-      // Check for "@init" to catch instances like "@init/some-package" or "@init" as a whole word.
-      if (!content.includes("@init")) {
+      // Check for "@100times" to catch instances like "@100times/some-package" or "@100times" as a whole word.
+      if (!content.includes("@100times")) {
         continue
       }
 
-      const count = getReplacementCount(content, "@init")
+      const count = getReplacementCount(content, "@100times")
       if (!count) {
         continue
       }
@@ -100,7 +100,7 @@ async function main() {
       filesChanged++
       totalReplacements += count
 
-      const replaced = content.split("@init").join(`@${projectName}`)
+      const replaced = content.split("@100times").join(`@${projectName}`)
 
       fs.writeFileSync(file, replaced, "utf8")
     } catch (error: unknown) {
@@ -118,13 +118,13 @@ async function main() {
 
   if (filesChanged > 0) {
     log.success(
-      `Replaced ${totalReplacements} instance(s) of '@init' with '@${projectName}' in ${filesChanged} file(s).`
+      `Replaced ${totalReplacements} instance(s) of '@100times' with '@${projectName}' in ${filesChanged} file(s).`
     )
 
     return
   }
 
-  log.info("No instances of '@init' found to replace in files.")
+  log.info("No instances of '@100times' found to replace in files.")
 }
 
 runScript(main)

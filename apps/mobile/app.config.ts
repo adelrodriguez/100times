@@ -1,12 +1,13 @@
 import { withSentry } from "@sentry/react-native/expo"
 import type { ConfigContext, ExpoConfig } from "expo/config"
 
-const APP_ID = "init"
-const APP_NAME = "Init Mobile"
+const APP_ID = "times100"
+const APP_NAME = "100times"
+const APP_BUNDLE_ID = "io.metaideas.times100"
 
 let expoConfig: ExpoConfig = {
   android: {
-    package: "com.init.mobile",
+    package: APP_BUNDLE_ID,
     adaptiveIcon: {
       backgroundColor: "#ffffff",
       foregroundImage: "./src/shared/assets/images/adaptive-icon.png",
@@ -17,7 +18,7 @@ let expoConfig: ExpoConfig = {
   },
   icon: "./src/shared/assets/images/icon.png",
   ios: {
-    bundleIdentifier: "com.init.mobile",
+    bundleIdentifier: APP_BUNDLE_ID,
     infoPlist: {
       ITSAppUsesNonExemptEncryption: false,
     },

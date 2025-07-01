@@ -1,4 +1,4 @@
-import * as z from "@init/utils/schema"
+import * as z from "@100times/utils/schema"
 import { createEnv } from "@t3-oss/env-core"
 import { createEnv as createEnvNextjs } from "@t3-oss/env-nextjs"
 
@@ -9,10 +9,6 @@ export const node = () =>
     },
     runtimeEnv: process.env,
   })
-
-// Presets for system environment variables from popular services (Vercel,
-// Neon, Supabase, Render, etc.)
-export * from "@t3-oss/env-core/presets-zod"
 
 // Package presets.
 //

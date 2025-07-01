@@ -1,4 +1,4 @@
-import { isDevelopment } from "@init/utils/environment"
+import { isDevelopment } from "@100times/utils/environment"
 import pino, { type LoggerOptions } from "pino"
 
 const options: LoggerOptions = {

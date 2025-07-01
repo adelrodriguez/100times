@@ -1,4 +1,4 @@
-import { logger } from "@init/observability/logger"
+import { logger } from "@100times/observability/logger"
 import NetInfo from "@react-native-community/netinfo"
 import { onlineManager } from "@tanstack/react-query"
 import { useFonts } from "expo-font"
